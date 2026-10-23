@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "eric.tempest",
+  "name": "Tempest",
+  "version": "1.0.0",
+  "author": "Eric Westphal",
+  "license": "MIT",
+  "description": "Live weather from a WeatherFlow Tempest station.",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Tempest",
+    "description": "Temperature and conditions reported by a Tempest station.",
+    "category": "Info",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "stationId": "",
+      "units": "auto",
+      "refreshSeconds": 60
+    },
+    "schema": [
+      {
+        "key": "stationId",
+        "type": "string",
+        "label": "Tempest station ID",
+        "defaultValue": ""
+      },
+      {
+        "key": "units",
+        "type": "enum",
+        "label": "Units",
+        "options": ["auto", "imperial", "metric"],
+        "defaultValue": "auto"
+      },
+      {
+        "key": "refreshSeconds",
+        "type": "integer",
+        "label": "Refresh interval (seconds)",
+        "min": 30,
+        "max": 1800,
+        "step": 30,
+        "defaultValue": 60
+      }
+    ]
+  }
+}
