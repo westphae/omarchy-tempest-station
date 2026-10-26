@@ -4,6 +4,8 @@ Live weather from a WeatherFlow Tempest station, shown on the Omarchy bar.
 
 The built-in weather widget reports a nearby city. This one reports the station in your yard: temperature on the bar, and feels-like, wind, humidity, pressure, rain, UV, and a three-day forecast in the popup.
 
+`preview.png` at the repository root is the screenshot shown on the Omarchy plugin marketplace.
+
 ## Install
 
 ```sh
